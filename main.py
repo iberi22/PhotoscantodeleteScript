@@ -55,4 +55,11 @@ for filename in os.listdir(source_folder):
             print(f'Moviendo {filename} a {destination_folder}')
             shutil.move(image_path, os.path.join(destination_folder, filename))
 
+            # Eliminar el archivo .rw2 correspondiente
+            rw2_filename = os.path.splitext(filename)[0] + '.rw2'
+            rw2_path = os.path.join(source_folder, rw2_filename)
+            if os.path.exists(rw2_path):
+                print(f'Eliminando {rw2_filename}')
+                os.remove(rw2_path)
+
 print("Análisis completado.")
