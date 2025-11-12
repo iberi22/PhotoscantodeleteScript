@@ -37,8 +37,3 @@ La función `has_bad_lighting` evalúa el contraste y exposición de la imagen e
 - Si no se selecciona ninguna carpeta, el script mostrará un mensaje y se cerrará.
 - Si hay errores al leer las imágenes, se ignorarán y el script continuará con el siguiente archivo.
 - El umbral de borrosidad y el umbral de nivel de iluminación pueden ajustarse en las funciones `is_blurry` y `has_bad_lighting`.
-
-## Créditos
-
-Este script fue creado por Beri (https://github.com/iberi22) con ayuda de llms.
-
